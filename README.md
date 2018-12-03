@@ -20,4 +20,9 @@
 
 é uma linguagem de estilo, isso quer dizer que ela tem as seguintes responsabilidades:
 
-- Visual;
+- Visual
+
+- Float
+  O Float cria um novo contexto, o elemento que adquiri a propriedade Float fica a frente do outro elemento.
+  Porém nunca esconde o conteúdo como um texto.
+  O que vai definir o width e o hight do float do elemento quando inicialmente não colocamos valores é o tamanho do conteúdo.
