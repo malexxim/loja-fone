@@ -1,0 +1,14 @@
+.container-store {
+  background-color: #e24647;
+  width: 90%;
+  /* porcentagem em relação a página */
+  padding: 55px 60px 165px 0;
+  /* top bottom mexem com o eixo X
+left right mexem com eixo y */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* porcentagem em relação a página */
+  transform: translateX(-50%) translateY(-50%);
+  /* porcentagem em relação ao elemento header */
+}

@@ -1,0 +1,44 @@
+.header-store {
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 138px;
+  padding-left: 60px;
+}
+
+.header-store > .title {
+  font-size: 40px;
+  font-family: Arial, "Roboto", sans-serif;
+  float: left;
+  text-transform: uppercase;
+}
+
+.header-store > .navigation {
+  font-size: 21px;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  float: right;
+}
+
+.header-store [type="search"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: inherit; /* ou cor branca - inherit herda do pai */
+  font-family: Arial, "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 8px;
+  width: 358px;
+  margin-right: 65px;
+}
+
+/* .header-store input[type="search"] aqui está com input, mas não é necessário especificar que é um input, poderia passar direto,eu quero um elemento qualquer, pode ser um input, o que for,mas desde que tenha o tipo search, vê acima { */
+/*  background: transparent;
+} */
+
+.header-store .action {
+  text-decoration: none;
+  margin-right: 60px;
+  color: inherit;
+}
+.header-store .action.-last {
+  margin-right: 0;
+}
