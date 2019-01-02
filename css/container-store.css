@@ -1,7 +1,9 @@
 .container-store {
+  box-sizing: border-box;
   background-color: #e24647;
   width: 90%;
   /* porcentagem em relação a página */
+  max-width: 1330px;
   padding: 55px 60px 165px 0;
   /* top bottom mexem com o eixo X
 left right mexem com eixo y */
@@ -11,4 +13,27 @@ left right mexem com eixo y */
   /* porcentagem em relação a página */
   transform: translateX(-50%) translateY(-50%);
   /* porcentagem em relação ao elemento header */
+}
+
+@media (max-width: 1310px) {
+  .container-store {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1470px), (max-height: 952px) {
+  .container-store {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-height: 952px) {
+  .container-store {
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Loja de Fone</title>
 
     <link
@@ -25,7 +26,7 @@
         <h1 class="title">Logo</h1>
 
         <nav class="navigation">
-          <input type="search" placeholder="Buscar" />
+          <input class="-active" type="search" placeholder="Buscar" />
           <a class="action" href="http://collabcode.training">Produtos</a>
           <a class="action" href="http://collabcode.training">Serviços</a>
           <a class="action -last" href="http://collabcode.training"
@@ -35,7 +36,7 @@
       </header>
 
       <figure class="photo-product">
-        <img src="img/fone.png" alt="Fone de ouvido" />
+        <img class="photo" src="img/fone.png" alt="Fone de ouvido" />
       </figure>
 
       <section class="wrap-product">
@@ -44,20 +45,58 @@
 
           <dd class="item -heart">
             <img class="icon" src="img/heart.png" alt="Like" />
+            <img class="icon -active" src="img/heart-active.png" alt="Like" />
           </dd>
           <dd class="item -star">
-            <img class="icon" src="img/star-active.png" alt="Estrela" />
-            <img class="icon" src="img/star-active.png" alt="Estrela" />
-            <img class="icon" src="img/star-active.png" alt="Estrela" />
-            <img class="icon" src="img/star-active.png" alt="Estrela" />
-            <img class="icon" src="img/star.png" alt="Estrela" />
+            <ol>
+              <li class="star">
+                <img class="icon" src="img/star.png" alt="Estrela" />
+                <img
+                  class="icon -active"
+                  src="img/star-active.png"
+                  alt="Estrela"
+                />
+              </li>
+              <li class="star">
+                <img class="icon" src="img/star.png" alt="Estrela" />
+                <img
+                  class="icon -active"
+                  src="img/star-active.png"
+                  alt="Estrela"
+                />
+              </li>
+              <li class="star">
+                <img class="icon" src="img/star.png" alt="Estrela" />
+                <img
+                  class="icon -active"
+                  src="img/star-active.png"
+                  alt="Estrela"
+                />
+              </li>
+              <li class="star">
+                <img class="icon" src="img/star.png" alt="Estrela" />
+                <img
+                  class="icon -active"
+                  src="img/star-active.png"
+                  alt="Estrela"
+                />
+              </li>
+              <li class="star">
+                <img class="icon" src="img/star.png" alt="Estrela" />
+                <img
+                  class="icon -active"
+                  src="img/star-active.png"
+                  alt="Estrela"
+                />
+              </li>
+            </ol>
           </dd>
-          <dd class="item">4.0 (97)</dd>
+          <dd class="item -number">4.0 (97)</dd>
           <dd class="item -info">
-            <strong class="contrast">Frete</strong> C$ 108
+            <strong class="contrast">Frete</strong> R$ 108
           </dd>
           <dd class="item -info -last">
-            <strong class="contrast">Preço</strong> C$ 340
+            <strong class="contrast">Preço</strong> R$ 340
           </dd>
           <dd class="text">
             Fone TOP com um cor feliz que não tem fio. A cor também é algo que
@@ -77,5 +116,9 @@
         </div>
       </section>
     </div>
+
+    <script src="js/header-store.js"></script>
+    <script src="js/description-product.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>

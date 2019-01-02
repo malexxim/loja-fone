@@ -32,6 +32,9 @@
   vertical-align: bottom;
 }
 
+.header-store [type="search"]::placeholder {
+  color: inherit;
+}
 /* .header-store input[type="search"] aqui está com input, mas não é necessário especificar que é um input, poderia passar direto,eu quero um elemento qualquer, pode ser um input, o que for,mas desde que tenha o tipo search, vê acima { */
 /*  background: transparent;
 } */
@@ -68,4 +71,77 @@
 
 .header-store .action:hover:after {
   transform: scale(1);
+}
+
+@media (max-width: 1310px) {
+  .header-store {
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 1235px) {
+  .header-store {
+    margin-bottom: 70px;
+  }
+
+  .header-store > .title {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header-store > .navigation {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 961px) {
+  .header-store {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .header-store [type="search"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-88%);
+    background-color: #fff;
+    color: #000;
+    transition: transform 200ms linear;
+  }
+
+  .header-store .-active[type="search"] {
+    transition: transform 600ms cubic-bezier(0, 0, 0.96, 1.26);
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 530px) {
+  .header-store .action {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 465px) {
+  .header-store .action {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 382px) {
+  .header-store {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header-store .action {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 344px) {
+  .header-store > .navigation {
+    display: none;
+  }
 }
