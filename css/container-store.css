@@ -37,3 +37,9 @@ left right mexem com eixo y */
     margin-right: auto;
   }
 }
+
+@media (max-width: 344px) {
+  .container-store {
+    overflow-x: hidden;
+  }
+}
