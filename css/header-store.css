@@ -25,6 +25,10 @@
   padding-bottom: 8px;
 }
 
+.header-store .item.-menu {
+  display: none;
+}
+
 .header-store .item.-last {
   margin-right: 0;
 }
